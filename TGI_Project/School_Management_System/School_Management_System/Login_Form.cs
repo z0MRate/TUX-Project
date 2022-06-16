@@ -20,7 +20,7 @@ namespace School_Management_System
 
         private void btnexit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void btnlogin_Click(object sender, EventArgs e)

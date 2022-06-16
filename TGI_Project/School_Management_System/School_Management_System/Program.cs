@@ -20,7 +20,7 @@ namespace School_Management_System
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new School_Management_System());
+            Application.Run(new Login_Form());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
