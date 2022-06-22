@@ -79,6 +79,8 @@
     <Compile Include="School_Management_System.Designer.cs">
       <DependentUpon>School_Management_System.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentInfo.cs" />
+    <Compile Include="StudentRegistration.cs" />
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
