@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(School_Management_System));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -111,6 +112,10 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.cmbselectMajor = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtSearchStudentInfo = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.dgridStudentList = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -132,6 +137,8 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridStudentList)).BeginInit();
             this.tabPage9.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -212,7 +219,7 @@
             // 
             this.groupBox7.Controls.Add(this.rdoSingle);
             this.groupBox7.Controls.Add(this.rdoMarried);
-            this.groupBox7.Location = new System.Drawing.Point(1593, 37);
+            this.groupBox7.Location = new System.Drawing.Point(1381, 27);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(199, 71);
             this.groupBox7.TabIndex = 139;
@@ -256,7 +263,7 @@
             this.lblPhoneNumer.AutoSize = true;
             this.lblPhoneNumer.Depth = 0;
             this.lblPhoneNumer.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblPhoneNumer.Location = new System.Drawing.Point(1323, 26);
+            this.lblPhoneNumer.Location = new System.Drawing.Point(1136, 26);
             this.lblPhoneNumer.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPhoneNumer.Name = "lblPhoneNumer";
             this.lblPhoneNumer.Size = new System.Drawing.Size(106, 19);
@@ -270,7 +277,7 @@
             this.txtPhoneNumber.Depth = 0;
             this.txtPhoneNumber.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPhoneNumber.LeadingIcon = null;
-            this.txtPhoneNumber.Location = new System.Drawing.Point(1323, 58);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(1139, 46);
             this.txtPhoneNumber.MaxLength = 50;
             this.txtPhoneNumber.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPhoneNumber.Multiline = false;
@@ -287,7 +294,7 @@
             this.txtNationalID.Depth = 0;
             this.txtNationalID.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNationalID.LeadingIcon = null;
-            this.txtNationalID.Location = new System.Drawing.Point(1053, 58);
+            this.txtNationalID.Location = new System.Drawing.Point(907, 46);
             this.txtNationalID.MaxLength = 50;
             this.txtNationalID.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNationalID.Multiline = false;
@@ -302,7 +309,7 @@
             this.lblNationalID.AutoSize = true;
             this.lblNationalID.Depth = 0;
             this.lblNationalID.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblNationalID.Location = new System.Drawing.Point(1053, 26);
+            this.lblNationalID.Location = new System.Drawing.Point(904, 26);
             this.lblNationalID.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblNationalID.Name = "lblNationalID";
             this.lblNationalID.Size = new System.Drawing.Size(80, 19);
@@ -314,7 +321,7 @@
             this.dtpBirth.CalendarFont = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirth.CustomFormat = "";
             this.dtpBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirth.Location = new System.Drawing.Point(718, 80);
+            this.dtpBirth.Location = new System.Drawing.Point(612, 68);
             this.dtpBirth.Name = "dtpBirth";
             this.dtpBirth.Size = new System.Drawing.Size(279, 28);
             this.dtpBirth.TabIndex = 134;
@@ -336,7 +343,7 @@
             this.cmbSex.Items.AddRange(new object[] {
             "Female",
             "Male"});
-            this.cmbSex.Location = new System.Drawing.Point(556, 59);
+            this.cmbSex.Location = new System.Drawing.Point(493, 49);
             this.cmbSex.MaxDropDownItems = 4;
             this.cmbSex.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbSex.Name = "cmbSex";
@@ -349,7 +356,7 @@
             this.lblDateorfBirth.AutoSize = true;
             this.lblDateorfBirth.Depth = 0;
             this.lblDateorfBirth.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblDateorfBirth.Location = new System.Drawing.Point(718, 26);
+            this.lblDateorfBirth.Location = new System.Drawing.Point(609, 26);
             this.lblDateorfBirth.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblDateorfBirth.Name = "lblDateorfBirth";
             this.lblDateorfBirth.Size = new System.Drawing.Size(92, 19);
@@ -361,7 +368,7 @@
             this.lblSex.AutoSize = true;
             this.lblSex.Depth = 0;
             this.lblSex.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblSex.Location = new System.Drawing.Point(556, 26);
+            this.lblSex.Location = new System.Drawing.Point(493, 26);
             this.lblSex.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(27, 19);
@@ -375,7 +382,7 @@
             this.txtLastname.Depth = 0;
             this.txtLastname.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtLastname.LeadingIcon = null;
-            this.txtLastname.Location = new System.Drawing.Point(286, 58);
+            this.txtLastname.Location = new System.Drawing.Point(253, 48);
             this.txtLastname.MaxLength = 50;
             this.txtLastname.MouseState = MaterialSkin.MouseState.OUT;
             this.txtLastname.Multiline = false;
@@ -390,7 +397,7 @@
             this.lblLastname.AutoSize = true;
             this.lblLastname.Depth = 0;
             this.lblLastname.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblLastname.Location = new System.Drawing.Point(286, 26);
+            this.lblLastname.Location = new System.Drawing.Point(253, 26);
             this.lblLastname.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblLastname.Name = "lblLastname";
             this.lblLastname.Size = new System.Drawing.Size(74, 19);
@@ -404,7 +411,7 @@
             this.txtFirstname.Depth = 0;
             this.txtFirstname.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFirstname.LeadingIcon = null;
-            this.txtFirstname.Location = new System.Drawing.Point(16, 58);
+            this.txtFirstname.Location = new System.Drawing.Point(13, 48);
             this.txtFirstname.MaxLength = 50;
             this.txtFirstname.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFirstname.Multiline = false;
@@ -438,9 +445,9 @@
             this.groupBox6.Controls.Add(this.materialLabel10);
             this.groupBox6.Controls.Add(this.txtbstuVillage);
             this.groupBox6.Controls.Add(this.cmbbstuCity);
-            this.groupBox6.Location = new System.Drawing.Point(14, 149);
+            this.groupBox6.Location = new System.Drawing.Point(14, 143);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1823, 124);
+            this.groupBox6.Size = new System.Drawing.Size(1823, 109);
             this.groupBox6.TabIndex = 161;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Place of Birth";
@@ -452,7 +459,7 @@
             this.txtbstuStreet.Depth = 0;
             this.txtbstuStreet.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtbstuStreet.LeadingIcon = null;
-            this.txtbstuStreet.Location = new System.Drawing.Point(286, 59);
+            this.txtbstuStreet.Location = new System.Drawing.Point(253, 49);
             this.txtbstuStreet.MaxLength = 50;
             this.txtbstuStreet.MouseState = MaterialSkin.MouseState.OUT;
             this.txtbstuStreet.Multiline = false;
@@ -467,7 +474,7 @@
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(286, 27);
+            this.materialLabel6.Location = new System.Drawing.Point(253, 27);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(42, 19);
@@ -481,7 +488,7 @@
             this.txtbstuCommune.Depth = 0;
             this.txtbstuCommune.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtbstuCommune.LeadingIcon = null;
-            this.txtbstuCommune.Location = new System.Drawing.Point(556, 59);
+            this.txtbstuCommune.Location = new System.Drawing.Point(493, 49);
             this.txtbstuCommune.MaxLength = 50;
             this.txtbstuCommune.MouseState = MaterialSkin.MouseState.OUT;
             this.txtbstuCommune.Multiline = false;
@@ -520,7 +527,7 @@
             "ChomkaMon",
             "BoeungKengKong",
             "KormBol"});
-            this.cmbbstuDistrict.Location = new System.Drawing.Point(809, 60);
+            this.cmbbstuDistrict.Location = new System.Drawing.Point(733, 51);
             this.cmbbstuDistrict.MaxDropDownItems = 4;
             this.cmbbstuDistrict.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbbstuDistrict.Name = "cmbbstuDistrict";
@@ -533,7 +540,7 @@
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(809, 27);
+            this.materialLabel7.Location = new System.Drawing.Point(733, 28);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(51, 19);
@@ -545,7 +552,7 @@
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(1053, 27);
+            this.materialLabel8.Location = new System.Drawing.Point(962, 28);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(101, 19);
@@ -557,7 +564,7 @@
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(556, 27);
+            this.materialLabel9.Location = new System.Drawing.Point(493, 27);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(74, 19);
@@ -583,7 +590,7 @@
             this.txtbstuVillage.Depth = 0;
             this.txtbstuVillage.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtbstuVillage.LeadingIcon = null;
-            this.txtbstuVillage.Location = new System.Drawing.Point(13, 59);
+            this.txtbstuVillage.Location = new System.Drawing.Point(13, 50);
             this.txtbstuVillage.MaxLength = 50;
             this.txtbstuVillage.MouseState = MaterialSkin.MouseState.OUT;
             this.txtbstuVillage.Multiline = false;
@@ -632,7 +639,7 @@
             "Odda Meanchey",
             "Mondulkiri",
             "Tboung Khmum"});
-            this.cmbbstuCity.Location = new System.Drawing.Point(1053, 60);
+            this.cmbbstuCity.Location = new System.Drawing.Point(962, 51);
             this.cmbbstuCity.MaxDropDownItems = 4;
             this.cmbbstuCity.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbbstuCity.Name = "cmbbstuCity";
@@ -652,7 +659,7 @@
             this.groupBox5.Controls.Add(this.materialLabel21);
             this.groupBox5.Controls.Add(this.txtcstuVillage);
             this.groupBox5.Controls.Add(this.cmbcstuCity);
-            this.groupBox5.Location = new System.Drawing.Point(14, 286);
+            this.groupBox5.Location = new System.Drawing.Point(14, 259);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(1823, 124);
             this.groupBox5.TabIndex = 160;
@@ -666,7 +673,7 @@
             this.txtcstuStreet.Depth = 0;
             this.txtcstuStreet.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcstuStreet.LeadingIcon = null;
-            this.txtcstuStreet.Location = new System.Drawing.Point(286, 59);
+            this.txtcstuStreet.Location = new System.Drawing.Point(253, 49);
             this.txtcstuStreet.MaxLength = 50;
             this.txtcstuStreet.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcstuStreet.Multiline = false;
@@ -681,7 +688,7 @@
             this.materialLabel25.AutoSize = true;
             this.materialLabel25.Depth = 0;
             this.materialLabel25.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel25.Location = new System.Drawing.Point(286, 27);
+            this.materialLabel25.Location = new System.Drawing.Point(253, 27);
             this.materialLabel25.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel25.Name = "materialLabel25";
             this.materialLabel25.Size = new System.Drawing.Size(42, 19);
@@ -695,7 +702,7 @@
             this.txtcstuCommune.Depth = 0;
             this.txtcstuCommune.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcstuCommune.LeadingIcon = null;
-            this.txtcstuCommune.Location = new System.Drawing.Point(556, 59);
+            this.txtcstuCommune.Location = new System.Drawing.Point(493, 49);
             this.txtcstuCommune.MaxLength = 50;
             this.txtcstuCommune.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcstuCommune.Multiline = false;
@@ -734,7 +741,7 @@
             "ChomkaMon",
             "BoeungKengKong",
             "KormBol"});
-            this.cmbcstuDistrict.Location = new System.Drawing.Point(809, 60);
+            this.cmbcstuDistrict.Location = new System.Drawing.Point(733, 50);
             this.cmbcstuDistrict.MaxDropDownItems = 4;
             this.cmbcstuDistrict.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbcstuDistrict.Name = "cmbcstuDistrict";
@@ -747,7 +754,7 @@
             this.materialLabel13.AutoSize = true;
             this.materialLabel13.Depth = 0;
             this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(809, 27);
+            this.materialLabel13.Location = new System.Drawing.Point(733, 27);
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel13.Name = "materialLabel13";
             this.materialLabel13.Size = new System.Drawing.Size(51, 19);
@@ -759,7 +766,7 @@
             this.materialLabel18.AutoSize = true;
             this.materialLabel18.Depth = 0;
             this.materialLabel18.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel18.Location = new System.Drawing.Point(1053, 27);
+            this.materialLabel18.Location = new System.Drawing.Point(962, 27);
             this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel18.Name = "materialLabel18";
             this.materialLabel18.Size = new System.Drawing.Size(101, 19);
@@ -771,7 +778,7 @@
             this.materialLabel20.AutoSize = true;
             this.materialLabel20.Depth = 0;
             this.materialLabel20.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel20.Location = new System.Drawing.Point(556, 27);
+            this.materialLabel20.Location = new System.Drawing.Point(493, 27);
             this.materialLabel20.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel20.Name = "materialLabel20";
             this.materialLabel20.Size = new System.Drawing.Size(74, 19);
@@ -797,7 +804,7 @@
             this.txtcstuVillage.Depth = 0;
             this.txtcstuVillage.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcstuVillage.LeadingIcon = null;
-            this.txtcstuVillage.Location = new System.Drawing.Point(13, 59);
+            this.txtcstuVillage.Location = new System.Drawing.Point(13, 49);
             this.txtcstuVillage.MaxLength = 50;
             this.txtcstuVillage.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcstuVillage.Multiline = false;
@@ -846,7 +853,7 @@
             "Odda Meanchey",
             "Mondulkiri",
             "Tboung Khmum"});
-            this.cmbcstuCity.Location = new System.Drawing.Point(1053, 60);
+            this.cmbcstuCity.Location = new System.Drawing.Point(962, 50);
             this.cmbcstuCity.MaxDropDownItems = 4;
             this.cmbcstuCity.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbcstuCity.Name = "cmbcstuCity";
@@ -884,9 +891,9 @@
             this.groupBox4.Controls.Add(this.materialLabel14);
             this.groupBox4.Controls.Add(this.txtParentVillage);
             this.groupBox4.Controls.Add(this.cmbParentCity);
-            this.groupBox4.Location = new System.Drawing.Point(14, 423);
+            this.groupBox4.Location = new System.Drawing.Point(14, 390);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1823, 218);
+            this.groupBox4.Size = new System.Drawing.Size(1823, 199);
             this.groupBox4.TabIndex = 159;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Guardian Information";
@@ -956,7 +963,7 @@
             this.txtParentCommune1.Depth = 0;
             this.txtParentCommune1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtParentCommune1.LeadingIcon = null;
-            this.txtParentCommune1.Location = new System.Drawing.Point(556, 151);
+            this.txtParentCommune1.Location = new System.Drawing.Point(493, 141);
             this.txtParentCommune1.MaxLength = 50;
             this.txtParentCommune1.MouseState = MaterialSkin.MouseState.OUT;
             this.txtParentCommune1.Multiline = false;
@@ -973,7 +980,7 @@
             this.txtParentCommune.Depth = 0;
             this.txtParentCommune.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtParentCommune.LeadingIcon = null;
-            this.txtParentCommune.Location = new System.Drawing.Point(556, 56);
+            this.txtParentCommune.Location = new System.Drawing.Point(493, 46);
             this.txtParentCommune.MaxLength = 50;
             this.txtParentCommune.MouseState = MaterialSkin.MouseState.OUT;
             this.txtParentCommune.Multiline = false;
@@ -1048,7 +1055,7 @@
             this.txtParentName1.Depth = 0;
             this.txtParentName1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtParentName1.LeadingIcon = null;
-            this.txtParentName1.Location = new System.Drawing.Point(13, 151);
+            this.txtParentName1.Location = new System.Drawing.Point(13, 141);
             this.txtParentName1.MaxLength = 50;
             this.txtParentName1.MouseState = MaterialSkin.MouseState.OUT;
             this.txtParentName1.Multiline = false;
@@ -1077,7 +1084,7 @@
             this.txtParentName.Depth = 0;
             this.txtParentName.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtParentName.LeadingIcon = null;
-            this.txtParentName.Location = new System.Drawing.Point(13, 56);
+            this.txtParentName.Location = new System.Drawing.Point(13, 46);
             this.txtParentName.MaxLength = 50;
             this.txtParentName.MouseState = MaterialSkin.MouseState.OUT;
             this.txtParentName.Multiline = false;
@@ -1128,7 +1135,7 @@
             "ChomkaMon",
             "BoeungKengKong",
             "KormBol"});
-            this.cmbParentDistrict1.Location = new System.Drawing.Point(803, 152);
+            this.cmbParentDistrict1.Location = new System.Drawing.Point(733, 142);
             this.cmbParentDistrict1.MaxDropDownItems = 4;
             this.cmbParentDistrict1.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbParentDistrict1.Name = "cmbParentDistrict1";
@@ -1141,7 +1148,7 @@
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel16.Location = new System.Drawing.Point(806, 119);
+            this.materialLabel16.Location = new System.Drawing.Point(733, 119);
             this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel16.Name = "materialLabel16";
             this.materialLabel16.Size = new System.Drawing.Size(51, 19);
@@ -1153,7 +1160,7 @@
             this.materialLabel17.AutoSize = true;
             this.materialLabel17.Depth = 0;
             this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel17.Location = new System.Drawing.Point(1053, 119);
+            this.materialLabel17.Location = new System.Drawing.Point(962, 119);
             this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel17.Name = "materialLabel17";
             this.materialLabel17.Size = new System.Drawing.Size(101, 19);
@@ -1165,7 +1172,7 @@
             this.parentCommune1.AutoSize = true;
             this.parentCommune1.Depth = 0;
             this.parentCommune1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.parentCommune1.Location = new System.Drawing.Point(556, 119);
+            this.parentCommune1.Location = new System.Drawing.Point(493, 119);
             this.parentCommune1.MouseState = MaterialSkin.MouseState.HOVER;
             this.parentCommune1.Name = "parentCommune1";
             this.parentCommune1.Size = new System.Drawing.Size(74, 19);
@@ -1177,7 +1184,7 @@
             this.materialLabel19.AutoSize = true;
             this.materialLabel19.Depth = 0;
             this.materialLabel19.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel19.Location = new System.Drawing.Point(286, 119);
+            this.materialLabel19.Location = new System.Drawing.Point(253, 119);
             this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel19.Name = "materialLabel19";
             this.materialLabel19.Size = new System.Drawing.Size(49, 19);
@@ -1191,7 +1198,7 @@
             this.txtParentVillage1.Depth = 0;
             this.txtParentVillage1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtParentVillage1.LeadingIcon = null;
-            this.txtParentVillage1.Location = new System.Drawing.Point(286, 151);
+            this.txtParentVillage1.Location = new System.Drawing.Point(253, 141);
             this.txtParentVillage1.MaxLength = 50;
             this.txtParentVillage1.MouseState = MaterialSkin.MouseState.OUT;
             this.txtParentVillage1.Multiline = false;
@@ -1240,7 +1247,7 @@
             "Odda Meanchey",
             "Mondulkiri",
             "Tboung Khmum"});
-            this.cmbParentCity1.Location = new System.Drawing.Point(1053, 152);
+            this.cmbParentCity1.Location = new System.Drawing.Point(962, 142);
             this.cmbParentCity1.MaxDropDownItems = 4;
             this.cmbParentCity1.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbParentCity1.Name = "cmbParentCity1";
@@ -1277,7 +1284,7 @@
             "ChomkaMon",
             "BoeungKengKong",
             "KormBol"});
-            this.cmbParentDistrict.Location = new System.Drawing.Point(803, 57);
+            this.cmbParentDistrict.Location = new System.Drawing.Point(733, 47);
             this.cmbParentDistrict.MaxDropDownItems = 4;
             this.cmbParentDistrict.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbParentDistrict.Name = "cmbParentDistrict";
@@ -1290,7 +1297,7 @@
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(806, 24);
+            this.materialLabel11.Location = new System.Drawing.Point(733, 24);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(51, 19);
@@ -1302,7 +1309,7 @@
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.Location = new System.Drawing.Point(1053, 24);
+            this.materialLabel12.Location = new System.Drawing.Point(962, 24);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(101, 19);
@@ -1314,7 +1321,7 @@
             this.parentCommune.AutoSize = true;
             this.parentCommune.Depth = 0;
             this.parentCommune.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.parentCommune.Location = new System.Drawing.Point(556, 24);
+            this.parentCommune.Location = new System.Drawing.Point(493, 24);
             this.parentCommune.MouseState = MaterialSkin.MouseState.HOVER;
             this.parentCommune.Name = "parentCommune";
             this.parentCommune.Size = new System.Drawing.Size(74, 19);
@@ -1326,7 +1333,7 @@
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(286, 24);
+            this.materialLabel14.Location = new System.Drawing.Point(253, 24);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel14.Name = "materialLabel14";
             this.materialLabel14.Size = new System.Drawing.Size(49, 19);
@@ -1340,7 +1347,7 @@
             this.txtParentVillage.Depth = 0;
             this.txtParentVillage.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtParentVillage.LeadingIcon = null;
-            this.txtParentVillage.Location = new System.Drawing.Point(286, 56);
+            this.txtParentVillage.Location = new System.Drawing.Point(253, 46);
             this.txtParentVillage.MaxLength = 50;
             this.txtParentVillage.MouseState = MaterialSkin.MouseState.OUT;
             this.txtParentVillage.Multiline = false;
@@ -1389,7 +1396,7 @@
             "Odda Meanchey",
             "Mondulkiri",
             "Tboung Khmum"});
-            this.cmbParentCity.Location = new System.Drawing.Point(1053, 57);
+            this.cmbParentCity.Location = new System.Drawing.Point(962, 47);
             this.cmbParentCity.MaxDropDownItems = 4;
             this.cmbParentCity.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbParentCity.Name = "cmbParentCity";
@@ -1400,9 +1407,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtEmerContact);
-            this.groupBox3.Location = new System.Drawing.Point(14, 654);
+            this.groupBox3.Location = new System.Drawing.Point(12, 596);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1823, 98);
+            this.groupBox3.Size = new System.Drawing.Size(1823, 87);
             this.groupBox3.TabIndex = 158;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Emergency Contact (Name,Phone)";
@@ -1415,7 +1422,7 @@
             this.txtEmerContact.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEmerContact.LeadingIcon = null;
             this.txtEmerContact.Location = new System.Drawing.Point(13, 27);
-            this.txtEmerContact.MaxLength = 100;
+            this.txtEmerContact.MaxLength = 50;
             this.txtEmerContact.MouseState = MaterialSkin.MouseState.OUT;
             this.txtEmerContact.Multiline = false;
             this.txtEmerContact.Name = "txtEmerContact";
@@ -1429,7 +1436,7 @@
             this.btnSubmit.BackColor = System.Drawing.Color.PaleGreen;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(1661, 907);
+            this.btnSubmit.Location = new System.Drawing.Point(1652, 901);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(169, 42);
             this.btnSubmit.TabIndex = 156;
@@ -1443,9 +1450,9 @@
             this.groupBox2.Controls.Add(this.cmbYear);
             this.groupBox2.Controls.Add(this.cmbMajorList);
             this.groupBox2.Controls.Add(this.lblMajorList);
-            this.groupBox2.Location = new System.Drawing.Point(14, 765);
+            this.groupBox2.Location = new System.Drawing.Point(12, 690);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1823, 134);
+            this.groupBox2.Size = new System.Drawing.Size(1823, 106);
             this.groupBox2.TabIndex = 157;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Major";
@@ -1455,7 +1462,7 @@
             this.lblDegree.AutoSize = true;
             this.lblDegree.Depth = 0;
             this.lblDegree.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblDegree.Location = new System.Drawing.Point(289, 30);
+            this.lblDegree.Location = new System.Drawing.Point(253, 30);
             this.lblDegree.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblDegree.Name = "lblDegree";
             this.lblDegree.Size = new System.Drawing.Size(50, 19);
@@ -1481,7 +1488,7 @@
             "Associate Degree",
             "Master Degree",
             "Short Course"});
-            this.cmbYear.Location = new System.Drawing.Point(289, 62);
+            this.cmbYear.Location = new System.Drawing.Point(253, 52);
             this.cmbYear.MaxDropDownItems = 4;
             this.cmbYear.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbYear.Name = "cmbYear";
@@ -1510,7 +1517,7 @@
             "Digital Marketing",
             "Fintech",
             "UX/UI Design"});
-            this.cmbMajorList.Location = new System.Drawing.Point(13, 62);
+            this.cmbMajorList.Location = new System.Drawing.Point(13, 52);
             this.cmbMajorList.MaxDropDownItems = 4;
             this.cmbMajorList.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbMajorList.Name = "cmbMajorList";
@@ -1549,9 +1556,14 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Register Lecture";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.btnEdit);
+            this.tabPage5.Controls.Add(this.cmbselectMajor);
+            this.tabPage5.Controls.Add(this.txtSearchStudentInfo);
+            this.tabPage5.Controls.Add(this.dgridStudentList);
             this.tabPage5.ImageKey = "student_male_240px1.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 39);
             this.tabPage5.Name = "tabPage5";
@@ -1559,6 +1571,112 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Student Informations";
             this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(860, 20);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(124, 49);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // cmbselectMajor
+            // 
+            this.cmbselectMajor.AutoResize = false;
+            this.cmbselectMajor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbselectMajor.Depth = 0;
+            this.cmbselectMajor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbselectMajor.DropDownHeight = 174;
+            this.cmbselectMajor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbselectMajor.DropDownWidth = 121;
+            this.cmbselectMajor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmbselectMajor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbselectMajor.FormattingEnabled = true;
+            this.cmbselectMajor.IntegralHeight = false;
+            this.cmbselectMajor.ItemHeight = 43;
+            this.cmbselectMajor.Items.AddRange(new object[] {
+            "Artificial Intelligence",
+            "App/Web Development",
+            "Cyber Security",
+            "Digital Marketing",
+            "Fintech",
+            "UX/UI Design"});
+            this.cmbselectMajor.Location = new System.Drawing.Point(464, 20);
+            this.cmbselectMajor.MaxDropDownItems = 4;
+            this.cmbselectMajor.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbselectMajor.Name = "cmbselectMajor";
+            this.cmbselectMajor.Size = new System.Drawing.Size(316, 49);
+            this.cmbselectMajor.StartIndex = 0;
+            this.cmbselectMajor.TabIndex = 6;
+            this.cmbselectMajor.SelectedIndexChanged += new System.EventHandler(this.cmbselectMajor_SelectedIndexChanged);
+            this.cmbselectMajor.TextChanged += new System.EventHandler(this.cmbselectMajor_TextChanged);
+            // 
+            // txtSearchStudentInfo
+            // 
+            this.txtSearchStudentInfo.AllowPromptAsInput = true;
+            this.txtSearchStudentInfo.AnimateReadOnly = false;
+            this.txtSearchStudentInfo.AsciiOnly = false;
+            this.txtSearchStudentInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtSearchStudentInfo.BeepOnError = false;
+            this.txtSearchStudentInfo.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtSearchStudentInfo.Depth = 0;
+            this.txtSearchStudentInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearchStudentInfo.HidePromptOnLeave = false;
+            this.txtSearchStudentInfo.HideSelection = true;
+            this.txtSearchStudentInfo.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtSearchStudentInfo.LeadingIcon = null;
+            this.txtSearchStudentInfo.Location = new System.Drawing.Point(36, 20);
+            this.txtSearchStudentInfo.Mask = "";
+            this.txtSearchStudentInfo.MaxLength = 32767;
+            this.txtSearchStudentInfo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSearchStudentInfo.Name = "txtSearchStudentInfo";
+            this.txtSearchStudentInfo.PasswordChar = '\0';
+            this.txtSearchStudentInfo.PrefixSuffixText = null;
+            this.txtSearchStudentInfo.PromptChar = '_';
+            this.txtSearchStudentInfo.ReadOnly = false;
+            this.txtSearchStudentInfo.RejectInputOnFirstFailure = false;
+            this.txtSearchStudentInfo.ResetOnPrompt = true;
+            this.txtSearchStudentInfo.ResetOnSpace = true;
+            this.txtSearchStudentInfo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearchStudentInfo.SelectedText = "";
+            this.txtSearchStudentInfo.SelectionLength = 0;
+            this.txtSearchStudentInfo.SelectionStart = 0;
+            this.txtSearchStudentInfo.ShortcutsEnabled = true;
+            this.txtSearchStudentInfo.Size = new System.Drawing.Size(316, 48);
+            this.txtSearchStudentInfo.SkipLiterals = true;
+            this.txtSearchStudentInfo.TabIndex = 4;
+            this.txtSearchStudentInfo.TabStop = false;
+            this.txtSearchStudentInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSearchStudentInfo.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtSearchStudentInfo.TrailingIcon = null;
+            this.txtSearchStudentInfo.UseSystemPasswordChar = false;
+            this.txtSearchStudentInfo.ValidatingType = null;
+            this.txtSearchStudentInfo.Click += new System.EventHandler(this.txtSearchStudentInfo_Click_1);
+            this.txtSearchStudentInfo.TextChanged += new System.EventHandler(this.txtSearchStudentInfo_TextChanged);
+            // 
+            // dgridStudentList
+            // 
+            this.dgridStudentList.BackgroundColor = System.Drawing.Color.White;
+            this.dgridStudentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgridStudentList.Location = new System.Drawing.Point(36, 94);
+            this.dgridStudentList.MultiSelect = false;
+            this.dgridStudentList.Name = "dgridStudentList";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgridStudentList.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgridStudentList.RowHeadersWidth = 51;
+            this.dgridStudentList.RowTemplate.Height = 24;
+            this.dgridStudentList.Size = new System.Drawing.Size(1768, 820);
+            this.dgridStudentList.TabIndex = 1;
+            this.dgridStudentList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridStudentList_CellContentClick);
             // 
             // tabPage6
             // 
@@ -1742,6 +1860,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TGI School Management System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.School_Management_System_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -1757,6 +1876,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgridStudentList)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
             this.ResumeLayout(false);
@@ -1858,5 +1979,9 @@
         private MaterialSkin.Controls.MaterialComboBox cmbYear;
         private MaterialSkin.Controls.MaterialComboBox cmbMajorList;
         private MaterialSkin.Controls.MaterialLabel lblMajorList;
+        private System.Windows.Forms.DataGridView dgridStudentList;
+        private MaterialSkin.Controls.MaterialMaskedTextBox txtSearchStudentInfo;
+        private MaterialSkin.Controls.MaterialComboBox cmbselectMajor;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
