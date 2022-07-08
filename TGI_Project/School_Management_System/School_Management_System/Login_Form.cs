@@ -31,7 +31,7 @@ namespace School_Management_System
                 {
                     if(txtcpass.Text == "123")
                     {
-                        School_Management_System mainform = new School_Management_System();
+                        Mainfrm mainform = new Mainfrm();
                         mainform.ShowDialog();
                     }
                     else

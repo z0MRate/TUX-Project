@@ -41,3 +41,55 @@ C:\Users\USer\source\repos\TGI_Project\School_Management_System\School_Managemen
 C:\Users\USer\source\repos\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.CopyComplete
 C:\Users\USer\source\repos\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.exe
 C:\Users\USer\source\repos\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.pdb
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\School_Management_System.exe.config
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\School_Management_System.exe
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\School_Management_System.pdb
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Docking.dll
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\MaterialSkin.dll
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.AssemblyReference.cache
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.SuggestedBindingRedirects.cache
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Login_Form.resources
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Properties.Resources.resources
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.School_Management_System.resources
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.GenerateResource.cache
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.CoreCompileInputs.cache
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.CopyComplete
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.exe
+D:\Clone Test\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.pdb
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\School_Management_System.exe.config
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\School_Management_System.exe
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\School_Management_System.pdb
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\MaterialSkin.dll
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.AssemblyReference.cache
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.SuggestedBindingRedirects.cache
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Login_Form.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Properties.Resources.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.School_Management_System.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.GenerateResource.cache
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.CoreCompileInputs.cache
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.csproj.CopyComplete
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.exe
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.pdb
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Mainfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Dashboardfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.LecturerInformationfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.RegisterAdminfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.RegisterLecturerfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.RegisterStudentfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Settingfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.StudentInformationfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.AdminInformationfrm.resources

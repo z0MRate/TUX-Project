@@ -65,22 +65,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminInformationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInformationfrm.Designer.cs">
+      <DependentUpon>AdminInformationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboardfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboardfrm.Designer.cs">
+      <DependentUpon>Dashboardfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerInformationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerInformationfrm.Designer.cs">
+      <DependentUpon>LecturerInformationfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mainfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainfrm.Designer.cs">
+      <DependentUpon>Mainfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterAdminfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterAdminfrm.Designer.cs">
+      <DependentUpon>RegisterAdminfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterLecturerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterLecturerfrm.Designer.cs">
+      <DependentUpon>RegisterLecturerfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterStudentfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterStudentfrm.Designer.cs">
+      <DependentUpon>RegisterStudentfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="School_Management_System.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="School_Management_System.Designer.cs">
       <DependentUpon>School_Management_System.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settingfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settingfrm.Designer.cs">
+      <DependentUpon>Settingfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfo.cs" />
+    <Compile Include="StudentInformationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInformationfrm.Designer.cs">
+      <DependentUpon>StudentInformationfrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminInformationfrm.resx">
+      <DependentUpon>AdminInformationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboardfrm.resx">
+      <DependentUpon>Dashboardfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerInformationfrm.resx">
+      <DependentUpon>LecturerInformationfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainfrm.resx">
+      <DependentUpon>Mainfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,8 +159,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegisterAdminfrm.resx">
+      <DependentUpon>RegisterAdminfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterLecturerfrm.resx">
+      <DependentUpon>RegisterLecturerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterStudentfrm.resx">
+      <DependentUpon>RegisterStudentfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="School_Management_System.resx">
       <DependentUpon>School_Management_System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settingfrm.resx">
+      <DependentUpon>Settingfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInformationfrm.resx">
+      <DependentUpon>StudentInformationfrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -144,6 +226,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\handshake_heart_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Menu_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_details_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Cheques_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_student_male_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_training_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_lecturer_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_male_user_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_more_info_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_settings_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
