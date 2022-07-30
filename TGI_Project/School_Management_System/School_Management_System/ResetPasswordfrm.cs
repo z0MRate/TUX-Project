@@ -26,6 +26,17 @@ namespace School_Management_System
         {
             User user = new User();
             user.resetPassword(User.id, txtOldPassword.Text.Trim(), txtNewPassword.Text.Trim(), txtConfirmPassword.Text.Trim());
+            if(User.changeSuccess == true)
+            {
+                this.Close();
+                User.changeSuccess = false;
+            }
+            
+        }
+
+        private void ResetPasswordfrm_Load(object sender, EventArgs e)
+        {
+            this.StartPosition = FormStartPosition.CenterScreen;  
         }
     }
 }

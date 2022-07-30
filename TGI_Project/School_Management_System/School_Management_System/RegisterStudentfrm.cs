@@ -172,6 +172,7 @@ namespace School_Management_System
                 txtEmerContact.Text, cmbMajorList.Text, cmbYear.Text);
             //MessageBox.Show(StudentInformationfrm.id);
             si.UpdateStudentInfo(StudentInformationfrm.id);
+            this.Close();
         }
 
         private void txtFirstname_KeyPress(object sender, KeyPressEventArgs e)

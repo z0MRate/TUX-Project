@@ -75,11 +75,8 @@ namespace School_Management_System
             }
             else if(dgridStudentList.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
-                id = dgridStudentList.Rows[e.RowIndex].Cells[0].Value.ToString();
-                
+                id = dgridStudentList.Rows[e.RowIndex].Cells[0].Value.ToString();               
             }
-            
-
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
