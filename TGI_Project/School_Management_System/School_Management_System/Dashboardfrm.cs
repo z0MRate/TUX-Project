@@ -49,8 +49,8 @@ namespace School_Management_System
             {
                 DataRow dr1 = dt2.Rows[0];
                 pieChartAttendance.Series["Series1"].Points.AddXY("Present", float.Parse(dr1["Present"].ToString())/100);
-                pieChartAttendance.Series["Series1"].Points.AddXY("Permission", float.Parse(dr1["Permission"].ToString()));
-                pieChartAttendance.Series["Series1"].Points.AddXY("Absent", float.Parse(dr1["Absent"].ToString()));
+                pieChartAttendance.Series["Series1"].Points.AddXY("Permission", float.Parse(dr1["Permission"].ToString())/100);
+                pieChartAttendance.Series["Series1"].Points.AddXY("Absent", float.Parse(dr1["Absent"].ToString())/100);
             }
             
         }

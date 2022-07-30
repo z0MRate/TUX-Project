@@ -65,8 +65,13 @@ namespace School_Management_System
             
             StudentInfo si = new StudentInfo();
             if (e.RowIndex < 0)
-            {
+            {               
                 return;
+            }
+            else if(e.ColumnIndex < 0)
+            {
+                id = dgridStudentList.Rows[e.RowIndex].Cells[0].Value.ToString();
+                
             }
             else if(dgridStudentList.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {

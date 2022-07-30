@@ -134,6 +134,11 @@ namespace School_Management_System
             {
                 return;
             }
+            else if (e.ColumnIndex < 0)
+            {
+                id = dgridUser.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+            }
             else if (dgridUser.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 id = dgridUser.Rows[e.RowIndex].Cells[0].Value.ToString();

@@ -80,6 +80,17 @@ namespace School_Management_System
             {
                 return;
             }
+            else if (e.ColumnIndex < 0)
+            {
+                txtStudentID.Text = dgridStudentPayment.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtUsername.Text = dgridStudentPayment.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtSex.Text = dgridStudentPayment.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtMajor.Text = dgridStudentPayment.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtCourseFee.Text = dgridStudentPayment.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtPaidFee.Text = 0.ToString();
+                txtReaminFee.Text = dgridStudentPayment.Rows[e.RowIndex].Cells[6].Value.ToString();
+
+            }
             else if (dgridStudentPayment.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 txtStudentID.Text = dgridStudentPayment.Rows[e.RowIndex].Cells[0].Value.ToString();
