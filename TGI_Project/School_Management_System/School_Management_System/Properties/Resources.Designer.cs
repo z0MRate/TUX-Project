@@ -63,29 +63,9 @@ namespace School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _56691316 {
+        internal static System.Drawing.Bitmap _3c9PuA6K_400x400 {
             get {
-                object obj = ResourceManager.GetObject("56691316", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _640px_MoEYS__Cambodia__svg {
-            get {
-                object obj = ResourceManager.GetObject("640px-MoEYS_(Cambodia).svg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap cambodia_48px {
-            get {
-                object obj = ResourceManager.GetObject("cambodia_48px", resourceCulture);
+                object obj = ResourceManager.GetObject("3c9PuA6K_400x400", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,29 +83,9 @@ namespace School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap crossed_flags_japan_icon_cartoon_style_vector_25662506 {
+        internal static System.Drawing.Bitmap graduate_64px {
             get {
-                object obj = ResourceManager.GetObject("crossed-flags-japan-icon-cartoon-style-vector-25662506", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap green {
-            get {
-                object obj = ResourceManager.GetObject("green", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap handshake_heart_64px {
-            get {
-                object obj = ResourceManager.GetObject("handshake_heart_64px", resourceCulture);
+                object obj = ResourceManager.GetObject("graduate_64px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,16 +106,6 @@ namespace School_Management_System.Properties {
         internal static System.Drawing.Bitmap icons8_details_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_details_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_lecturer_32 {
-            get {
-                object obj = ResourceManager.GetObject("icons8_lecturer_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,16 +143,6 @@ namespace School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_settings_32 {
-            get {
-                object obj = ResourceManager.GetObject("icons8_settings_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_student_male_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_student_male_32", resourceCulture);
@@ -223,9 +163,9 @@ namespace School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap japan_48px {
+        internal static System.Drawing.Bitmap printer_30px {
             get {
-                object obj = ResourceManager.GetObject("japan_48px", resourceCulture);
+                object obj = ResourceManager.GetObject("printer_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +173,9 @@ namespace School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap red {
+        internal static System.Drawing.Bitmap transaction_32px {
             get {
-                object obj = ResourceManager.GetObject("red", resourceCulture);
+                object obj = ResourceManager.GetObject("transaction_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +183,9 @@ namespace School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tux_1 {
+        internal static System.Drawing.Bitmap transaction_32px1 {
             get {
-                object obj = ResourceManager.GetObject("Tux 1", resourceCulture);
+                object obj = ResourceManager.GetObject("transaction_32px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,19 +193,9 @@ namespace School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tux_Logo {
+        internal static System.Drawing.Bitmap user_30px {
             get {
-                object obj = ResourceManager.GetObject("Tux Logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap yellow {
-            get {
-                object obj = ResourceManager.GetObject("yellow", resourceCulture);
+                object obj = ResourceManager.GetObject("user_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

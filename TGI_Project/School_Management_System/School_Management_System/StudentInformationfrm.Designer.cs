@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnEdit = new System.Windows.Forms.Button();
             this.cmbselectMajor = new MaterialSkin.Controls.MaterialComboBox();
             this.txtSearchStudentInfo = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.dgridStudentList = new System.Windows.Forms.DataGridView();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgridStudentList)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(850, 17);
+            this.btnEdit.Location = new System.Drawing.Point(1016, 17);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(124, 49);
+            this.btnEdit.Size = new System.Drawing.Size(152, 49);
             this.btnEdit.TabIndex = 11;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -67,7 +68,7 @@
             "Digital Marketing",
             "Fintech",
             "UX/UI Design"});
-            this.cmbselectMajor.Location = new System.Drawing.Point(454, 17);
+            this.cmbselectMajor.Location = new System.Drawing.Point(579, 17);
             this.cmbselectMajor.MaxDropDownItems = 4;
             this.cmbselectMajor.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbselectMajor.Name = "cmbselectMajor";
@@ -90,7 +91,7 @@
             this.txtSearchStudentInfo.HideSelection = true;
             this.txtSearchStudentInfo.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtSearchStudentInfo.LeadingIcon = null;
-            this.txtSearchStudentInfo.Location = new System.Drawing.Point(26, 17);
+            this.txtSearchStudentInfo.Location = new System.Drawing.Point(96, 18);
             this.txtSearchStudentInfo.Mask = "";
             this.txtSearchStudentInfo.MaxLength = 32767;
             this.txtSearchStudentInfo.MouseState = MaterialSkin.MouseState.OUT;
@@ -128,35 +129,52 @@
             this.dgridStudentList.Location = new System.Drawing.Point(26, 85);
             this.dgridStudentList.MultiSelect = false;
             this.dgridStudentList.Name = "dgridStudentList";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgridStudentList.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgridStudentList.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgridStudentList.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgridStudentList.RowHeadersWidth = 51;
             this.dgridStudentList.RowTemplate.Height = 24;
+            this.dgridStudentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgridStudentList.Size = new System.Drawing.Size(1592, 779);
             this.dgridStudentList.TabIndex = 8;
             this.dgridStudentList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridStudentList_CellClick);
+            this.dgridStudentList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridStudentList_CellContentClick);
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(23, 33);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(58, 19);
+            this.materialLabel1.TabIndex = 12;
+            this.materialLabel1.Text = "Search: ";
             // 
             // StudentInformationfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1651, 890);
+            this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.cmbselectMajor);
             this.Controls.Add(this.txtSearchStudentInfo);
             this.Controls.Add(this.dgridStudentList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentInformationfrm";
-            this.Text = "StudentInformationfrm";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.StudentInformationfrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgridStudentList)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -166,5 +184,6 @@
         private MaterialSkin.Controls.MaterialComboBox cmbselectMajor;
         private MaterialSkin.Controls.MaterialMaskedTextBox txtSearchStudentInfo;
         private System.Windows.Forms.DataGridView dgridStudentList;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }

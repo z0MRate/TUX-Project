@@ -151,7 +151,7 @@ namespace School_Management_System
         public void Register()
         {
             cnn.Open();
-            SqlCommand cmd = new SqlCommand("insert into StudentInformation_Tbl values(@FirstName, @LastName, @Sex, @DateofBirth, @NationalID, @PhoneNumber, @Status, @PlaceofBirth, @CurrentAddress, @FirstGuardianName, @FirstGuardianAddress, @FirstGuardianOccupation, @FirstGuardianPhoneNumber, @SecondGuardianName, @SecondGuardianAddress, @SecondGuardianParentOccupation, @SecondGuardianPhoneNumber, @EmergencyContact, @Major, @Years)", cnn);
+            SqlCommand cmd = new SqlCommand("INSERT INTO StudentInformation_Tbl VALUES(@FirstName, @LastName, @Sex, @DateofBirth, @NationalID, @PhoneNumber, @Status, @PlaceofBirth, @CurrentAddress, @FirstGuardianName, @FirstGuardianAddress, @FirstGuardianOccupation, @FirstGuardianPhoneNumber, @SecondGuardianName, @SecondGuardianAddress, @SecondGuardianOccupation, @SecondGuardianPhoneNumber, @EmergencyContact, @Major, @Years)", cnn);
             cmd.Parameters.AddWithValue("@FirstName",StudentFirstname);
             cmd.Parameters.AddWithValue("@LastName", StudentLastName);
             cmd.Parameters.AddWithValue("@Sex", Sex);
@@ -167,7 +167,7 @@ namespace School_Management_System
             cmd.Parameters.AddWithValue("@FirstGuardianPhoneNumber", ParentPhoneNumber);
             cmd.Parameters.AddWithValue("@SecondGuardianName", Parentname1);
             cmd.Parameters.AddWithValue("@SecondGuardianAddress", Parentvillage1 + " " + Parentcommune1 + " " + Parentdistrict1 + " " + Parentcity1);
-            cmd.Parameters.AddWithValue("@SecondGuardianParentOccupation", ParentOccupation1);
+            cmd.Parameters.AddWithValue("@SecondGuardianOccupation", ParentOccupation1);
             cmd.Parameters.AddWithValue("@SecondGuardianPhoneNumber", ParentPhoneNumber1);
             cmd.Parameters.AddWithValue("@EmergencyContact", EmergencyContact);
             cmd.Parameters.AddWithValue("@Major", Major);
@@ -176,19 +176,17 @@ namespace School_Management_System
             cnn.Close();
             MessageBox.Show( "Submit Completed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        DataTable dt = new DataTable();
+        
         public DataTable ShowStudentList(string input, string tbl, string condition)
         {
-            if (condition.Trim() == "")
-            {
-                condition = " <> " + "''" ;
-            }
-            else
-            {
-                condition = " = '" + condition+ "'";
-            }
+            //if (condition.Trim() == "")
+            //{
+            //    condition = " <> " + "''" ;
+            //}
+            cnn.Close();
+            DataTable dt = new DataTable();
             cnn.Open();
-            SqlDataAdapter studentlist = new SqlDataAdapter("select " +  input + " from " + tbl + " where Major " + condition, cnn);
+            SqlDataAdapter studentlist = new SqlDataAdapter("SELECT " +  input + " FROM " + tbl + " WHERE  " + condition, cnn);
             studentlist.Fill(dt);   
             cnn.Close();
             return dt;
@@ -197,43 +195,58 @@ namespace School_Management_System
         public SqlDataReader getStudentbyID(string id)
         {
             cnn.Open();
-            SqlCommand student = new SqlCommand("select * from StudentInformation_Tbl where ID = '" + id + "'", cnn);
+            SqlCommand student = new SqlCommand("SELECT * FROM StudentInformation_Tbl WHERE ID = '" + id + "'", cnn);
             SqlDataReader sdr = student.ExecuteReader();
             sdr.Read();
             return sdr;
         }
-        public void UpdateStudentInfo()
+        public void UpdateStudentInfo(string id)
         {
             cnn.Open();
-            SqlCommand update = new SqlCommand("update StudentInformation_Tbl set " +
-                "FirstName = '" + StudentFirstname + "'," +
-                "LastName = '" + StudentLastName + "'," +
-                "Sex = '" + Sex + "'," +
-                "DateofBirth = '" + Dob + "'," +
-                "NationalID = '" + NationalID + "'," +
-                "PhoneNumber = '" + Phonenumber + "'," +
-                "Status = '" + Status + "'," +
-                "PlaceofBirth = '" + BirthStreet + " " + BirthVillage + " " + BirthCommune + " " + BirthDistrict + " " + BirthCity + "'," +
-                "CurrentAddress = '" + CurrentStreet + " " + CurrentVillage + " " + CurrentCommune + " " + CurrentDistrict + " " + CurrentCity + "'," +
-                "FirstGuardianName = '" + Parentname + "'," +
-                "FirstGuardianAddress = '" + Parentvillage + " " + Parentcommune + " " + Parentdistrict + " " + Parentcity + "'," +
-                "FirstGuardianOccupation = '" + ParentOccupation + "'," +
-                "FirstGuardianPhoneNumber = '" + ParentPhoneNumber + "'," +
-                "SecondGuardianName = '" + Parentname1 + "'," +
-                "SecondGuardianAddress = '" + Parentvillage1 + " " + Parentcommune1 + " " + Parentdistrict1 + " " + Parentcity1 + "'," +
-                "SecondGuardianParentOccupation = '" + ParentOccupation1 + "'," +
-                "SecondGuardianPhoneNumber = '" + ParentPhoneNumber1 + "'," +
-                "EmergencyContact = '" + EmergencyContact + "'," +
-                "Major = '" + Major + "'," +
-                "Years = '" + Year + "'");
+            SqlCommand update = new SqlCommand("UPDATE StudentInformation_Tbl SET " +
+                "FirstName = '" + StudentFirstname + "', " +
+                "LastName = '" + StudentLastName + "', " +
+                "Sex = '" + Sex + "', " +
+                "DateofBirth = '" + Dob + "', " +
+                "NationalID = '" + NationalID + "', " +
+                "PhoneNumber = '" + Phonenumber + "', " +
+                "Status = '" + Status + "', " +
+                "PlaceofBirth = '" + BirthStreet + " " + BirthVillage + " " + BirthCommune + " " + BirthDistrict + " " + BirthCity + "', " +
+                "CurrentAddress = '" + CurrentStreet + " " + CurrentVillage + " " + CurrentCommune + " " + CurrentDistrict + " " + CurrentCity + "', " +
+                "FirstGuardianName = '" + Parentname + "', " +
+                "FirstGuardianAddress = '" + Parentvillage + " " + Parentcommune + " " + Parentdistrict + " " + Parentcity + "', " +
+                "FirstGuardianOccupation = '" + ParentOccupation + "', " +
+                "FirstGuardianPhoneNumber = '" + ParentPhoneNumber + "', " +
+                "SecondGuardianName = '" + Parentname1 + "', " +
+                "SecondGuardianAddress = '" + Parentvillage1 + " " + Parentcommune1 + " " + Parentdistrict1 + " " + Parentcity1 + "', " +
+                "SecondGuardianOccupation = '" + ParentOccupation1 + "', " +
+                "SecondGuardianPhoneNumber = '" + ParentPhoneNumber1 + "', " +
+                "EmergencyContact = '" + EmergencyContact + "', " +
+                "Major = '" + Major + "', " +
+                "Years = '" + Year + "' WHERE ID = '" + id + "' ",cnn);
+            update.ExecuteNonQuery();
+            User user = new User();
+            user.updateSubject(Major);
+            MessageBox.Show("Update Success");
+            cnn.Close();
         }
         public DataTable SearchStudent(string input)
         {
+            DataTable dt = new DataTable();
             cnn.Open();
-            SqlDataAdapter studentselection = new SqlDataAdapter("select * from Studentlist_view Where ID like '%" + input + "%' or StudentName like '%" + input + "%' or Major like '%" + input+ "%'" +
-                " or Years like '%" + input + "%'  or DateofBirth like '%" + input + "%'  or EmergencyContact like '%" + input + "%'  or PhoneNumber like '%" + input + "%'", cnn);
+            SqlDataAdapter studentselection = new SqlDataAdapter("SELECT * FROM Studentlist_view WHERE ID LIKE '%" + input + "%' OR StudentName LIKE '%" + input + "%' OR Major LIKE '%" + input+ "%'" +
+                " OR Years LIKE '%" + input + "%'  OR DateofBirth LIKE '%" + input + "%'  OR EmergencyContact LIKE '%" + input + "%'  OR PhoneNumber LIKE '%" + input + "%'", cnn);
             dt.Clear();
             studentselection.Fill(dt);
+            cnn.Close();
+            return dt;
+        }
+        public DataTable douJoining(string selection, string tbl1, string tbl2, string joinon, string condition)
+        {
+            DataTable dt = new DataTable();
+            cnn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT " + selection + " FROM " + tbl1 + " INNER JOIN " + tbl2 + " ON " + joinon + " WHERE " + condition, cnn);
+            sda.Fill(dt);
             cnn.Close();
             return dt;
         }

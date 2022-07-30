@@ -103,6 +103,7 @@
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
             this.txtParentVillage = new MaterialSkin.Controls.MaterialTextBox();
             this.cmbParentCity = new MaterialSkin.Controls.MaterialComboBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -132,10 +133,11 @@
             this.groupBox1.Controls.Add(this.lblFirstname);
             this.groupBox1.Location = new System.Drawing.Point(13, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1621, 119);
+            this.groupBox1.Size = new System.Drawing.Size(1621, 123);
             this.groupBox1.TabIndex = 168;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Information";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox7
             // 
@@ -208,6 +210,7 @@
             this.txtPhoneNumber.TabIndex = 137;
             this.txtPhoneNumber.Text = "";
             this.txtPhoneNumber.TrailingIcon = null;
+            this.txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNumber_KeyPress);
             // 
             // txtNationalID
             // 
@@ -313,6 +316,7 @@
             this.txtLastname.TabIndex = 130;
             this.txtLastname.Text = "";
             this.txtLastname.TrailingIcon = null;
+            this.txtLastname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLastname_KeyPress);
             // 
             // lblLastname
             // 
@@ -342,6 +346,7 @@
             this.txtFirstname.TabIndex = 128;
             this.txtFirstname.Text = "";
             this.txtFirstname.TrailingIcon = null;
+            this.txtFirstname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstname_KeyPress);
             // 
             // lblFirstname
             // 
@@ -920,9 +925,9 @@
             // btnSubmit
             // 
             this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmit.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(51)))), ((int)(((byte)(181)))));
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
             this.btnSubmit.Location = new System.Drawing.Point(1457, 785);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(169, 42);
@@ -1092,6 +1097,7 @@
             this.txtParentPhoneNum1.TabIndex = 160;
             this.txtParentPhoneNum1.Text = "";
             this.txtParentPhoneNum1.TrailingIcon = null;
+            this.txtParentPhoneNum1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParentPhoneNum1_KeyPress);
             // 
             // lblParentPhoneNum
             // 
@@ -1123,6 +1129,7 @@
             this.txtParentPhoneNum.TabIndex = 158;
             this.txtParentPhoneNum.Text = "";
             this.txtParentPhoneNum.TrailingIcon = null;
+            this.txtParentPhoneNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParentPhoneNum_KeyPress);
             // 
             // txtParentName1
             // 
@@ -1480,11 +1487,26 @@
             this.cmbParentCity.StartIndex = 0;
             this.cmbParentCity.TabIndex = 140;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(51)))), ((int)(((byte)(181)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(1265, 785);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(169, 42);
+            this.btnUpdate.TabIndex = 170;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // RegisterStudentfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1638, 831);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.groupBox1);
@@ -1494,7 +1516,7 @@
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterStudentfrm";
-            this.Text = "RegisterStudent";
+            this.Text = "Register Student";
             this.Load += new System.EventHandler(this.RegisterStudentfrm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1560,7 +1582,6 @@
         private MaterialSkin.Controls.MaterialComboBox cmbYear;
         private MaterialSkin.Controls.MaterialComboBox cmbMajorList;
         private MaterialSkin.Controls.MaterialLabel lblMajorList;
-        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.GroupBox groupBox4;
         private MaterialSkin.Controls.MaterialLabel materialLabel23;
         private MaterialSkin.Controls.MaterialTextBox txtparentOccupation1;
@@ -1591,5 +1612,7 @@
         private MaterialSkin.Controls.MaterialTextBox txtParentVillage;
         private MaterialSkin.Controls.MaterialComboBox cmbParentCity;
         public MaterialSkin.Controls.MaterialTextBox txtFirstname;
+        public System.Windows.Forms.Button btnSubmit;
+        public System.Windows.Forms.Button btnUpdate;
     }
 }
