@@ -54,6 +54,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,23 +66,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminInformationfrm.cs">
+    <Compile Include="DashBoardMgmt.cs" />
+    <Compile Include="MyProfilefrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminInformationfrm.Designer.cs">
-      <DependentUpon>AdminInformationfrm.cs</DependentUpon>
+    <Compile Include="MyProfilefrm.Designer.cs">
+      <DependentUpon>MyProfilefrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AtendanceMgmt.cs" />
     <Compile Include="Dashboardfrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboardfrm.Designer.cs">
       <DependentUpon>Dashboardfrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LecturerInformationfrm.cs">
+    <Compile Include="Paymentfrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LecturerInformationfrm.Designer.cs">
-      <DependentUpon>LecturerInformationfrm.cs</DependentUpon>
+    <Compile Include="Paymentfrm.Designer.cs">
+      <DependentUpon>Paymentfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
@@ -95,25 +98,43 @@
     <Compile Include="Mainfrm.Designer.cs">
       <DependentUpon>Mainfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaymentMgmt.cs" />
+    <Compile Include="PaymentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentReport.Designer.cs">
+      <DependentUpon>PaymentReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterAdminfrm.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterUserfrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterAdminfrm.Designer.cs">
-      <DependentUpon>RegisterAdminfrm.cs</DependentUpon>
+    <Compile Include="RegisterUserfrm.Designer.cs">
+      <DependentUpon>RegisterUserfrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegisterLecturerfrm.cs">
+    <Compile Include="Attendance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterLecturerfrm.Designer.cs">
-      <DependentUpon>RegisterLecturerfrm.cs</DependentUpon>
+    <Compile Include="Attendance.Designer.cs">
+      <DependentUpon>Attendance.cs</DependentUpon>
     </Compile>
     <Compile Include="RegisterStudentfrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegisterStudentfrm.Designer.cs">
       <DependentUpon>RegisterStudentfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPasswordfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPasswordfrm.Designer.cs">
+      <DependentUpon>ResetPasswordfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="School_Management_System.cs">
       <SubType>Form</SubType>
@@ -134,14 +155,15 @@
     <Compile Include="StudentInformationfrm.Designer.cs">
       <DependentUpon>StudentInformationfrm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminInformationfrm.resx">
-      <DependentUpon>AdminInformationfrm.cs</DependentUpon>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="MyProfilefrm.resx">
+      <DependentUpon>MyProfilefrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboardfrm.resx">
       <DependentUpon>Dashboardfrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LecturerInformationfrm.resx">
-      <DependentUpon>LecturerInformationfrm.cs</DependentUpon>
+    <EmbeddedResource Include="Paymentfrm.resx">
+      <DependentUpon>Paymentfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
@@ -149,24 +171,25 @@
     <EmbeddedResource Include="Mainfrm.resx">
       <DependentUpon>Mainfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PaymentReport.resx">
+      <DependentUpon>PaymentReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="RegisterAdminfrm.resx">
-      <DependentUpon>RegisterAdminfrm.cs</DependentUpon>
+    <EmbeddedResource Include="RegisterUserfrm.resx">
+      <DependentUpon>RegisterUserfrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegisterLecturerfrm.resx">
-      <DependentUpon>RegisterLecturerfrm.cs</DependentUpon>
+    <EmbeddedResource Include="Attendance.resx">
+      <DependentUpon>Attendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterStudentfrm.resx">
       <DependentUpon>RegisterStudentfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPasswordfrm.resx">
+      <DependentUpon>ResetPasswordfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="School_Management_System.resx">
       <DependentUpon>School_Management_System.cs</DependentUpon>
@@ -192,67 +215,46 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\green.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\red.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\yellow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Tux Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Tux 1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cloud-based-school.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\640px-MoEYS_%28Cambodia%29.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\56691316.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\crossed-flags-japan-icon-cartoon-style-vector-25662506.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\japan_48px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cambodia_48px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\handshake_heart_64px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_Menu_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_details_32.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_Cheques_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_student_male_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_training_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_lecturer_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_male_user_32.png" />
+    <None Include="Resources\icons8_details_32.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_more_info_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_settings_32.png" />
+    <None Include="Resources\printer_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_training_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_student_male_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_male_user_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Menu_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3c9PuA6K_400x400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduate_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

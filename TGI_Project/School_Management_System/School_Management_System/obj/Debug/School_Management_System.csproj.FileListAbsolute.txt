@@ -86,10 +86,12 @@ C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management
 C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.pdb
 C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Mainfrm.resources
 C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Dashboardfrm.resources
-C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.LecturerInformationfrm.resources
-C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.RegisterAdminfrm.resources
-C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.RegisterLecturerfrm.resources
 C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.RegisterStudentfrm.resources
 C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Settingfrm.resources
 C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.StudentInformationfrm.resources
-C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.AdminInformationfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Attendance.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.MyProfilefrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.PaymentReport.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.Paymentfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.RegisterUserfrm.resources
+C:\Users\USer\source\repos\TUX_Project\TUX-Project\TGI_Project\School_Management_System\School_Management_System\obj\Debug\School_Management_System.ResetPasswordfrm.resources
