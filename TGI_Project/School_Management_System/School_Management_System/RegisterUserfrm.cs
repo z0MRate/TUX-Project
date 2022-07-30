@@ -94,8 +94,11 @@ namespace School_Management_System
             DataTable dt = new DataTable(); 
             if(User._role.ToLower() == "enroll")
             {
-                condition = "Role NOT IN ('Admin')";
+                condition = "Role NOT IN ('Admin','Enroll','Accountant')";
+
                 cmbRole.Items.Remove("Admin");
+                cmbRole.Items.Remove("Enroll");
+                cmbRole.Items.Remove("Accountant");
             }
             else if(User._role.ToLower() == "admin")
             {
@@ -168,7 +171,6 @@ namespace School_Management_System
                 {
                     if (cmbSubject.Items.Count == 6 || cmbSubject.Items.Count == 5)
                     {
-                        MessageBox.Show("slkfjsdklf");
                         cmbSubject.Enabled = true;
                         cmbSubject.Items.Add("None");
                         cmbSubject.Text = "None";
