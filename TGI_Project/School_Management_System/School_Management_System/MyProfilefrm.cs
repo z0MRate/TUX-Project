@@ -20,7 +20,9 @@ namespace School_Management_System
         private void btnResetPassword_Click(object sender, EventArgs e)
         {
             ResetPasswordfrm rpf = new ResetPasswordfrm();
+            
             rpf.ShowDialog();
+            
         }
 
         private void MyProfilefrm_Load(object sender, EventArgs e)

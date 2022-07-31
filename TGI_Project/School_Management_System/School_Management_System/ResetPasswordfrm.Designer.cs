@@ -197,6 +197,7 @@
             this.Controls.Add(this.txtOldPassword);
             this.Name = "ResetPasswordfrm";
             this.Text = "Reset Password";
+            this.Load += new System.EventHandler(this.ResetPasswordfrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

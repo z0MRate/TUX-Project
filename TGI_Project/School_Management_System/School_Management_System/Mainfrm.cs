@@ -110,7 +110,7 @@ namespace School_Management_System
             Athorization(role);
             btnProfile.Text = Login_Form.Username;
             pnlsignout.Hide();
-        
+            
             
         }
         public void Athorization(string _role)
@@ -120,6 +120,7 @@ namespace School_Management_System
                 pnlAttendance.Hide();
                 pnlMyProfile.Hide();
                 pnlPayment.Hide();
+                pnlRegisterStudent.Hide();
                 
             }
             else if(User._role.ToLower() == "enroll")

@@ -165,9 +165,11 @@ namespace School_Management_System
         }
 
         //Reset Password for Student
+        public static bool changeSuccess = false;
         public void resetPassword(string id, string old_password, string new_password, string confirm_password)
         {
             string opw = "";
+
             DataTable dt = new DataTable();
             conn.Open();
             SqlDataAdapter user = new SqlDataAdapter("SELECT Password FROM User_tbl WHERE StudentID = " + id,conn);
@@ -184,6 +186,7 @@ namespace School_Management_System
                     SqlCommand reset = new SqlCommand("UPDATE User_tbl SET Password = '" + new_password + "' WHERE StudentID = " + id, conn);
                     reset.ExecuteReader();
                     MessageBox.Show("Reset Password is Completed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);   
+                    changeSuccess = true;
                 }
                 else
                 {
